@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+	<form >
+
+		<div align="center">
+			<img src="Img/Banner.jpg" width="1300" height="250">
+			<br>
+			<label for ="nombre">Nombre: </label>
+			<input type="text" name="Nombre" id="nombre">
+			<label for = "pass"> Contraseña </label>
+            <input id = "pass" name = "contraseña" type = "password">
+            <br>
+            <br>
+            <img src="Img/Proce.jpg" width="200"><br><br>
+            <label for = "Proces">Procesadores</label>
+            <input id = "Proce" name = "preocesador" type = "range" min = "1" max = "15" step = "1">
+
+            <div align="left">
+            	<img src="Img/ram.jpg" width="220">
+            	<br>
+            	<label for = "ram" ><strong>Memoria Ram</strong></label>
+            	<input id = "ram" name = "Mram" type = "number" step = "1" min="1" max="20" value="1">
+
+                <div align="center">
+                	<label for = "ciudad"> Ciudad a enviar </label>
+            <input type = "text" list = "ciudades" id = "ciudad" name = "ciudad">
+            <datalist id = "ciudades">
+            <option value = "Chihuahua"> </option>
+            <option value = "Monterrey"> </option>
+            <option value = "Guadalajara"> </option>
+            <option value = "Ciudad de México"> </option>
+            <option value = "Yucatan"> </option>
+            <option value = "Otro"> </option>
+            </datalist>
+            <input type = "submit" value = "Comprar">
+
+            	<p> Elija tipo de envio </p>
+                <input type = "radio" id = "rapido" name = "respuesta" value = "rapido">
+                <label for = "rapido"> Rapido </label><br>
+                <input type = "radio" id = "normal" name = "respuesta" value = "normal">
+                <label for = "normal"> Normal </label>
+            </div>
+   
+            </div>
+
+
+        </div>
+
+
+	</form>
+
+</body>
+</html>
