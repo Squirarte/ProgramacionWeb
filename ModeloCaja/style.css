@@ -1,0 +1,16 @@
+/* Imagen de fondo en toda la pagina */
+body{background-image: url("Img/Fondo.jpg"); background-size: cover;}
+/* Cambio de letra y color de letra */
+*{color: #FFFFFF; font-family: Constantia; font-size: 22px; }
+/* Cambiamos fondo de los encabezados y alineacion del texto*/
+ h1,h2{background-color: #78A1D9; text-align: center;}
+/* Ponemos borde a la divicion central */
+body{border: #000000 5px dashed; }
+/* le ponemos fondo a todas las listas */
+ul{background-color: #5888CA}
+/* centramos la division llamado centro*/
+.diagrama{text-align: center;}
+/* cambiamos el color y tipo de letra a los parrafos bloque y linea*/
+#bloque,#linea{color: #000000; font-family: Impact}
+/* cambia el fondo y color de los enlaces*/
+.menu:hover{background-color: #C0C9EE; color:#000000 ;}

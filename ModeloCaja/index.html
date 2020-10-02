@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <link href = "style.css" type ="text/css" rel ="stylesheet">
+	<title>Modelo Caja</title>
+</head>
+<body>
+	<div >
+		<ul >
+			<li><a class="menu" href="#inicio">Que es el modelo de cajas?</a></li>
+			<li><a class="menu" href="#centro">Partes de una caja</a></li>
+			<li><a class="menu" href="#final">Cajas en bloque y en linea</a></li>
+		</ul>
+	</div>
+	<div id="inicio">
+		<h1>¿Qué es el modelo de cajas CSS?</h1>
+		<p>El modelo de cajas CSS completo se aplica a cajas que presentan comportamiento en bloque; las cajas con comportamiento en línea solo usan una parte del comportamiento definido en el modelo de cajas. El modelo define cómo funcionan juntas las diferentes partes de una caja (margen, borde, relleno y contenido) para crear una caja que puedas ver en tu página. Para complicarlo un poco más, hay un modelo de cajas estándar y un modelo de cajas alternativo.</p>
+	</div>
+	<div id="centro">
+		<h2>Partes de una caja</h2>
+		<p>Al hacer una caja de tipo bloque en CSS tenemos los elementos siguientes:</p>
+		<ul>
+			<li>El <strong>contenido de la caja</strong>> (o content box): El área donde se muestra el contenido, cuyo tamaño puede cambiarse utilizando propiedades como width y height.</li>
+			<li>El <strong>relleno de la caja</strong> (o padding box): El relleno es espacio en blanco alrededor del contenido; es posible controlar su tamaño usando la propiedad padding y otras propiedades relacionadas.</li>
+			<li>El <strong>borde de la caja</strong> (o border box): El borde de la caja envuelve el contenido y el de relleno. Es posible controlar su tamaño y estilo utilizando la propiedad border y otras propiedades relacionadas.</li>
+			<li>El <strong>margen de la caja</strong> (o margin box): El margen es la capa más externa. Envuelve el contenido, el relleno y el borde como espacio en blanco entre la caja y otros elementos. Es posible controlar su tamaño usando la propiedad margin y otras propiedades relacionadas.</li>
+		</ul>
+		<div class="diagrama">
+		<p>El diagrama siguiente muestra estas capas:</p>
+		<figure><img src="Img/BoxModel.png" alt="Capas del modelo caja"></figure>
+	</div>
+	</div>
+
+	<div id="final">
+		<h2>Cajas en bloque y en línea</h2>
+		<p>En CSS, en general, hay dos tipos de cajas: cajas en bloque y cajas en línea. Estas características se refieren al modo como se comporta la caja en términos de flujo de página y en relación con otras cajas de la página:</p>
+		<p id="bloque">Si una caja se define como un bloque, se comportará de las maneras siguientes:</p>
+		<ul>
+			<li>La caja fuerza un salto de línea al llegar al final de la línea.</li>
+			<li>La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya en su contenedor. En la mayoría de los casos, esto significa que la caja será tan ancha como su contenedor, y llenará el 100% del espacio disponible.  </li>
+			<li>Se respetan las propiedades width y height.</li>
+			<li>El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.</li>
+		</ul>
+		<p>A menos que decidamos cambiar el tipo de visualización a en línea, elementos como los encabezados (por ejemplo, &lt;h1&gt;) y todos los elementos &lt;p&gt; usan por defecto block como tipo de visualización externa.</p>
+		<p id="linea">Si una caja tiene una visualización externa de tipo inline, entonces:</p>
+		<ul>
+			<li>La caja no fuerza ningún salto de línea al llegar al final de la línea.</li>
+			<li>Las propiedades width y height no se aplican.</li>
+			<li>Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.</li>
+			<li>Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.</li>
+		</ul>
+		<p>El elemento &lt;a&gt;, que se utiliza para los enlaces, y los elementos &lt;span&gt;, &lt;em&gt; y &lt;strong&gt; son ejemplos de elementos que se muestran en línea por defecto.</p>
+		<p>El tipo de caja que se aplica a un elemento está definido por los valores de propiedad display, como block y inline, y se relaciona con el valor externo (outer) de visualización (display).</p>
+	</div>
+</body>
+</html>
