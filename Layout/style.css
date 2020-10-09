@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+
+}
+body{
+	background-image: url("https://image.freepik.com/vector-gratis/fondo-abstracto-blanco-estilo-papel-3d_23-2148396396.jpg");
+	background-size: cover;
+}
+header{
+	background-color: hsla(220,80%,60%,0.7); 
+	padding: 1px; 
+	font-family: Impact;
+}
+h2{ 
+	float: right; 
+	padding-right: 10px;
+}
+h1{
+	padding-left: 10px;
+}
+.enlaces{
+	text-align: center;
+	font-family: Impact;
+}
+
+ul,li{
+	display: inline-block;
+	margin-bottom: 0px;
+	background-color: hsla(220,80%,60%,0.6);
+	list-style: none;
+	padding: 5px;
+}
+.lista:hover{
+	background-color: hsla(200,80%,60%,0.6);
+}
+.divs{
+	text-align: center;
+	background-color: hsla(200,80%,70%,0.7);
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px
+}
+div{
+	background-color: hsla(220,80%,60%,0.6);
+	width: 250px;
+	height: 150px;
+	overflow: hidden;
+	font-family: Constantia;
+}
+.aDer,.bDer{
+	float: right;
+}
+.aIzq,aDer{
+	margin-bottom: 40px;
+}
