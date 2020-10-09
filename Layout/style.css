@@ -49,6 +49,9 @@ div{
 	overflow: hidden;
 	font-family: Constantia;
 }
+div::first-line{
+font-weight: bold;
+}
 .aDer,.bDer{
 	float: right;
 }
