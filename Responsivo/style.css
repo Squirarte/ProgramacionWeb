@@ -22,14 +22,16 @@ ul{
     margin-right: auto;
     margin-left: auto;
 }
-h2{color:white;}
+#lista{
+    list-style: none;
+}
+h2{
+    color:white;
+}
 img{
     max-width: 100%;
 }
 .row{width: 100%;}
-#lista{
-    list-style: none;
-}
 /*Dispositivos grandes*/
 @media (min-width: 1200px){
     .col-lg-1,.col-lg-2,.col-lg-3,
@@ -84,6 +86,7 @@ img{
     .col-md-10,.col-md-11,.col-md-12{
         float: left;
         border: 3px solid red;
+
     }
     .col-md-1{
         width: 8.33%;
@@ -123,13 +126,14 @@ img{
     }
 
 }
+
 @media(min-width: 0px) and (max-width: 949px){
     .col-cd-1,.col-cd-2,.col-cd-3,
     .col-cd-4,.col-cd-5,.col-cd-6,
     .col-cd-7,.col-cd-8,.col-cd-9,
     .col-cd-10,.col-cd-11,.col-cd-12{
         float: left;
-        border: 1px solid yellow;
+        border: 3px solid yellow;
     }
     .col-cd-1{
         width: 8.33%;
