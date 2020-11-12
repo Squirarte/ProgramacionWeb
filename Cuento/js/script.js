@@ -4,6 +4,7 @@ let sig = document.getElementById('siguiente');
 let atr = document.getElementById('atras');
 
 function iniciar(){
+	console.log(s);
      window.open('index-1.html', '_self');
 }
 function siguiente(){
@@ -26,7 +27,8 @@ function atras(){
 			window.open('index-'+(i-1)+'.html','_self');
 		}
 }
-function prin(){
+function prin(s){
+	
     window.open('index.html', '_self');
 }
 function play(){

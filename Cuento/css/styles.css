@@ -1,6 +1,6 @@
 *{
 	font-family: High Tower Text; margin-bottom: 20px;
-	font-size: 30px;
+	font-size: 20px;
 }
 .row{
 	text-align: center;
@@ -18,7 +18,7 @@ body{
         background-attachment: fixed;
 }
 img{
-	width: 100%;
+	max-width: 100%;
 
 }
 #inicio,#atras,#siguiente{
